@@ -1,40 +1,76 @@
+/* === Estilo general === */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f5f7fa;
-  color: #333;
+  background-color: #f5fdf7; /* verde muy claro */
+  color: #2f3e2f; /* verde oscuro para texto */
 }
+
+/* === Header === */
 header {
-  background: #2e7d32;
-  color: #fff;
+  background: linear-gradient(135deg, #2e7d32, #66bb6a); /* verdes */
+  color: white;
   padding: 20px;
   text-align: center;
+  border-bottom: 5px solid #1b5e20;
 }
-header nav a {
-  margin: 0 10px;
-  color: #fff;
+
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+}
+
+/* === Navegación === */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
   text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
 }
-header nav a:hover {
+
+nav a:hover {
   text-decoration: underline;
 }
+
+/* === Contenido principal === */
 main {
   padding: 20px;
   max-width: 900px;
   margin: auto;
 }
-article {
-  margin-bottom: 20px;
-  padding: 15px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+h2 {
+  color: #2e7d32; /* verde fuerte */
+  border-bottom: 2px solid #81c784;
+  padding-bottom: 5px;
 }
+
+/* === Botones === */
+button, .btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+button:hover, .btn:hover {
+  background-color: #388e3c;
+}
+
+/* === Footer === */
 footer {
+  background-color: #1b5e20;
+  color: white;
   text-align: center;
   padding: 15px;
-  background: #333;
-  color: #fff;
-  margin-top: 30px;
+  margin-top: 20px;
 }
